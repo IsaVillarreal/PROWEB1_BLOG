@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINK 21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="header">
+
+        </div>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder=" Busqueda" name="search">
+
+
+                <a class="button" href="#popup">Login / Sign up</a>
+                <div class="popup" id="popup">
+
+                    <div class="popup-inner">
+
+                        <div class="button-box">
+                            <div id="btn"></div>
+                            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                            <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+                        </div>
+                        <div id="login" class="input-data">
+                            <form>
+                                <input type="text" class="input-field" placeholder="Usuario" required>
+                                <input type="text" class="input-field" placeholder="Contraseña" required>
+                                <input type="checkbox" class="check-box"><span>Recordar contraseña</span>
+                                <button type="submit" class="submit-btn">Login</button>
+                            </form>
+                        </div>
+
+                        <div id="signup" class="input-data">
+                            <form>
+                                <input type="text" class="input-field" placeholder="Usuario" required>
+                                <input type="text" class="input-field" placeholder="Correo Electronico" required>
+                                <input type="text" class="input-field" placeholder="Contraseña" required>
+                                <input type="checkbox" class="check-box"><span>Estoy de acuerdo con los terminos y
+                                    condiciones</span>
+                                <button type="submit" class="submit-btn">Sign up</button>
+                            </form>
+                            <div class="profile-pic">
+                                <img src="icon.jpg">
+                                <div class="foto">
+                                    <button onclick="document.getElementById('id01').style.display='block'">Agregar
+                                        foto</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="closepopup" href="#">X</a>
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+        <div class="logo">
+            <a href="Blog.html"><img src="logo.jpg"></a>
+            <br>
+            <hr>
+            <br>
+        </div>
+
+        <div class="noticia1">
+
+            <h1>Titulo de la noticia o tip de belleza</h1>
+            <h5>Nombre del autor, fecha y hora</h5>
+            <br>
+            <hr>
+            <br>
+        </div>
+
+        <div class="imgnoti1">
+            <a href="Article.html"><img src="fotito.jpg"></a>
+        </div>
+
+        <div class="noticiatexto">
+            <br>
+            <br>
+            <br>
+            <p>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTOTEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO
+                TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</p>
+            <br>
+            <hr>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-900px";
+            y.style.left = "70px";
+            z.style.left = "100px";
+        }
+        function login() {
+            x.style.left = "200px";
+            y.style.left = "900px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+
+</html>

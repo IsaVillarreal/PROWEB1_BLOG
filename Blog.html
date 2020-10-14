@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINK 21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="header">
+            
+        </div>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder=" Busqueda" name="search">
+
+
+                <a class="button" href="#popup">Login / Sign up</a>
+                <div class="popup" id="popup">
+
+                    <div class="popup-inner">
+
+                        <div class="button-box">
+                            <div id="btn"></div>
+                            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                            <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+                        </div>
+                        <div id="login" class="input-data">
+                            <form>
+                                <input type="text" class="input-field" placeholder="Usuario" required>
+                                <input type="text" class="input-field" placeholder="Contraseña" required>
+                                <input type="checkbox" class="check-box"><span>Recordar contraseña</span>
+                                <button type="submit" class="submit-btn">Login</button>
+                            </form>
+                        </div>
+
+                        <div id="signup" class="input-data">
+                            <form>
+                                <input type="text" class="input-field" placeholder="Usuario" required>
+                                <input type="text" class="input-field" placeholder="Correo Electronico" required>
+                                <input type="text" class="input-field" placeholder="Contraseña" required>
+                                <input type="checkbox" class="check-box"><span>Estoy de acuerdo con los terminos y
+                                    condiciones</span>
+                                <button type="submit" class="submit-btn">Sign up</button>
+                            </form>
+                            <div class="profile-pic">
+                                <img src="icon.jpg">
+                                <div class="foto">
+                                    <button onclick="document.getElementById('id01').style.display='block'">Agregar
+                                        foto</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="closepopup" href="#">X</a>
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+       
+        <div class="logo">
+         <a href="Blog.html"><img src="logo.jpg"></a>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <div id="slider2">
+            <input type="radio" name="slider" id="slide1" checked hidden >
+            <input type="radio" name="slider" id="slide2" hidden >
+            <input type="radio" name="slider" id="slide3"hidden >
+            <input type="radio" name="slider" id="slide4" hidden>
+            <div id="slides2">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <a href="Article.html"> <img src="notiprincipal.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <a href="Article.html"><img src="notiprincipal.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <a href="Article.html"><img src="notiprincipal.jpg"></a>
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <a href="Article.html"><img src="notiprincipal.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+
+        <div class="content1">
+            <a href="Article.html"><img src="articulo.jpg"></a>
+        </div>
+
+        <div class="content2">
+            <a href="Article.html"><img src="articulo.jpg"></a>
+        </div>
+
+        <div class="content3">
+            <a href="Article.html"><img src="articulo.jpg"></a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-900px";
+            y.style.left = "70px";
+            z.style.left = "100px";
+        }
+        function login() {
+            x.style.left = "200px";
+            y.style.left = "900px";
+            z.style.left = "0";
+        }
+    </script>
+
+</body>
+
+</html>
